@@ -1,0 +1,331 @@
+{
+  "products": [
+    {
+      "id": "prod-9",
+      "name": "Lee's Concentrated Washing Powder",
+      "category": "Home Hygiene",
+      "price": 145,
+      "description": "Professional-grade concentrated washing powder. Formulated with smart enzymes to lift deep-seated stains while keeping fabrics soft and vibrantly clean.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828369/LeesChemicals_WASHING-POWDER_b2hhsv.jpg",
+      "inventory": 60,
+      "initialStock": 60,
+      "sales": 0,
+      "rating": 4.8
+    },
+    {
+      "id": "prod-10",
+      "name": "Lee's Whitening Laundry Bleach",
+      "category": "Home Hygiene",
+      "price": 65,
+      "description": "Highly effective whitening and sanitizing laundry bleach. Restores dingy whites to brilliant brightness and disinfects household surfaces with ease.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828368/LeesChemicals_laundrybleach_avgb9w.jpg",
+      "inventory": 50,
+      "initialStock": 50,
+      "sales": 0,
+      "rating": 4.6
+    },
+    {
+      "id": "prod-11",
+      "name": "Lee's All-Purpose Green Cleaner",
+      "category": "Home Hygiene",
+      "price": 85,
+      "description": "Powerful, bio-friendly green cleaning concentrate. Cuts through stubborn grease, grime, and oil on any hard surface without leaving harsh residues.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828366/Lees_Chemicals_ALL-PURPOSE-CLEANER-GREENS-1_kzptil.jpg",
+      "inventory": 40,
+      "initialStock": 40,
+      "sales": 0,
+      "rating": 4.7
+    },
+    {
+      "id": "prod-12",
+      "name": "Lee's Ultra-Degreaser Dishwashing Liquid",
+      "category": "Home Hygiene",
+      "price": 48,
+      "description": "Active-foaming, skin-friendly dishwashing liquid. Enriched with lemon extracts to cut through thick grease instantly, leaving glassware sparkling clean.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828361/Lees_Chemicals_Dishwashing_Liquid_qrcaw6.jpg",
+      "inventory": 80,
+      "initialStock": 80,
+      "sales": 0,
+      "rating": 4.9
+    },
+    {
+      "id": "prod-13",
+      "name": "Lee's Multi-Surface Cleaning Cream",
+      "category": "Home Hygiene",
+      "price": 75,
+      "description": "Micro-abrasive ammonia-free cleaning cream. Safely polishes and deep-cleans sinks, stoves, tiles, and stainless steel without scratching.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828364/LeesChemicals_cleaning-cream-BACK_f4uqha.jpg",
+      "inventory": 45,
+      "initialStock": 45,
+      "sales": 0,
+      "rating": 4.5
+    },
+    {
+      "id": "prod-14",
+      "name": "Lee's Professional Tyre & Dash Shine",
+      "category": "Automotive Care",
+      "price": 165,
+      "description": "Premium silicone-based trim restorer. Protects rubber, vinyl, and plastic from UV damage while producing a deep, long-lasting high-gloss shine.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828366/Lees_Chemicals_tyre-dash-official_xj8wit.jpg",
+      "inventory": 35,
+      "initialStock": 35,
+      "sales": 0,
+      "rating": 4.8
+    },
+    {
+      "id": "prod-15",
+      "name": "Lee's Premium Leather Cleaner",
+      "category": "Automotive Care",
+      "price": 185,
+      "description": "PH-balanced, deeply penetrating leather care solution. Safely lifts embedded soil from leather upholstery and car seats while restoring natural oils.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828363/LeesChemicals_Leather_cleaner_apdwfx.jpg",
+      "inventory": 30,
+      "initialStock": 30,
+      "sales": 0,
+      "rating": 4.7
+    },
+    {
+      "id": "prod-16",
+      "name": "Lee's Heavy-Duty Hand Grit Cleaner",
+      "category": "Automotive Care",
+      "price": 110,
+      "description": "Workshop-grade hand cleaner formulated with polyurethane grit. Easily emulsifies stubborn grease, paint, ink, and automotive oils while nourishing skin.",
+      "image": "https://res.cloudinary.com/dka0498ns/image/upload/v1782828362/LeesChemicals_hand_grit_cleaner_vpyxcz.jpg",
+      "inventory": 50,
+      "initialStock": 50,
+      "sales": 0,
+      "rating": 4.9
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1",
+      "name": "Sibongile Ndlovu",
+      "email": "sibongile.ndlovu@example.com",
+      "avatarColor": "emerald",
+      "joinDate": "2025-08-15",
+      "totalSpent": 12450,
+      "points": 1200,
+      "lifetimePoints": 1850,
+      "tier": "Gold",
+      "vouchers": [
+        {
+          "id": "vch-1",
+          "code": "SVR-GOLD-50",
+          "amount": 50,
+          "pointsCost": 500,
+          "used": false,
+          "dateCreated": "2026-05-10"
+        }
+      ],
+      "orderHistory": [
+        {
+          "id": "ord-101",
+          "customerId": "cust-1",
+          "customerName": "Sibongile Ndlovu",
+          "date": "2026-05-10",
+          "items": [
+            {
+              "productId": "prod-2",
+              "name": "AuraGlow Ambient Light Wave",
+              "price": 1200,
+              "quantity": 1
+            },
+            {
+              "productId": "prod-3",
+              "name": "KipCup Brew Press Travel Mug",
+              "price": 450,
+              "quantity": 2
+            }
+          ],
+          "subtotal": 2100,
+          "discountApplied": 105,
+          "pointsEarned": 210,
+          "pointsRedeemed": 0,
+          "total": 1995
+        },
+        {
+          "id": "ord-104",
+          "customerId": "cust-1",
+          "customerName": "Sibongile Ndlovu",
+          "date": "2026-06-12",
+          "items": [
+            {
+              "productId": "prod-5",
+              "name": "AeroSound ANC True Wireless Pods",
+              "price": 1800,
+              "quantity": 2
+            }
+          ],
+          "subtotal": 3600,
+          "discountApplied": 360,
+          "pointsEarned": 540,
+          "pointsRedeemed": 0,
+          "total": 3240
+        }
+      ]
+    },
+    {
+      "id": "cust-2",
+      "name": "Leroy Smith",
+      "email": "leroy.smith@example.com",
+      "avatarColor": "blue",
+      "joinDate": "2026-02-10",
+      "totalSpent": 450,
+      "points": 45,
+      "lifetimePoints": 45,
+      "tier": "Bronze",
+      "vouchers": [],
+      "orderHistory": [
+        {
+          "id": "ord-102",
+          "customerId": "cust-2",
+          "customerName": "Leroy Smith",
+          "date": "2026-02-12",
+          "items": [
+            {
+              "productId": "prod-3",
+              "name": "KipCup Brew Press Travel Mug",
+              "price": 450,
+              "quantity": 1
+            }
+          ],
+          "subtotal": 450,
+          "discountApplied": 0,
+          "pointsEarned": 45,
+          "pointsRedeemed": 0,
+          "total": 450
+        }
+      ]
+    },
+    {
+      "id": "cust-3",
+      "name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "avatarColor": "purple",
+      "joinDate": "2024-11-05",
+      "totalSpent": 42000,
+      "points": 4500,
+      "lifetimePoints": 5200,
+      "tier": "Platinum",
+      "vouchers": [],
+      "orderHistory": [
+        {
+          "id": "ord-103",
+          "customerId": "cust-3",
+          "customerName": "Amara Okafor",
+          "date": "2026-04-20",
+          "items": [
+            {
+              "productId": "prod-5",
+              "name": "AeroSound ANC True Wireless Pods",
+              "price": 1800,
+              "quantity": 3
+            },
+            {
+              "productId": "prod-6",
+              "name": "SolarArc Foldable Power Station",
+              "price": 2400,
+              "quantity": 2
+            }
+          ],
+          "subtotal": 10200,
+          "discountApplied": 1530,
+          "pointsEarned": 2040,
+          "pointsRedeemed": 0,
+          "total": 8670
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-101",
+      "customerId": "cust-1",
+      "customerName": "Sibongile Ndlovu",
+      "date": "2026-05-10",
+      "items": [
+        {
+          "productId": "prod-2",
+          "name": "AuraGlow Ambient Light Wave",
+          "price": 1200,
+          "quantity": 1
+        },
+        {
+          "productId": "prod-3",
+          "name": "KipCup Brew Press Travel Mug",
+          "price": 450,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 2100,
+      "discountApplied": 105,
+      "pointsEarned": 210,
+      "pointsRedeemed": 0,
+      "total": 1995
+    },
+    {
+      "id": "ord-104",
+      "customerId": "cust-1",
+      "customerName": "Sibongile Ndlovu",
+      "date": "2026-06-12",
+      "items": [
+        {
+          "productId": "prod-5",
+          "name": "AeroSound ANC True Wireless Pods",
+          "price": 1800,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 3600,
+      "discountApplied": 360,
+      "pointsEarned": 540,
+      "pointsRedeemed": 0,
+      "total": 3240
+    },
+    {
+      "id": "ord-102",
+      "customerId": "cust-2",
+      "customerName": "Leroy Smith",
+      "date": "2026-02-12",
+      "items": [
+        {
+          "productId": "prod-3",
+          "name": "KipCup Brew Press Travel Mug",
+          "price": 450,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 450,
+      "discountApplied": 0,
+      "pointsEarned": 45,
+      "pointsRedeemed": 0,
+      "total": 450
+    },
+    {
+      "id": "ord-103",
+      "customerId": "cust-3",
+      "customerName": "Amara Okafor",
+      "date": "2026-04-20",
+      "items": [
+        {
+          "productId": "prod-5",
+          "name": "AeroSound ANC True Wireless Pods",
+          "price": 1800,
+          "quantity": 3
+        },
+        {
+          "productId": "prod-6",
+          "name": "SolarArc Foldable Power Station",
+          "price": 2400,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 10200,
+      "discountApplied": 1530,
+      "pointsEarned": 2040,
+      "pointsRedeemed": 0,
+      "total": 8670
+    }
+  ]
+}

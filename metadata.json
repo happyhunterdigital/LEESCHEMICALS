@@ -1,0 +1,6 @@
+{
+  "name": "LEES CHEMICALS Detergents & Hygiene Suite",
+  "description": "Premium industrial, commercial, and household cleaning products, detergents, and detailing formulations, with interactive store, customer loyalty tracking, and a high-conversion lead generation layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
