@@ -536,7 +536,7 @@ export default function App() {
                   {activeCustomer ? activeCustomer.name : "Guest Shopper"}
                 </p>
                 <p className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">
-                  {activeCustomer ? `${activeCustomer.tier} Member` : "AuraMart Guest"}
+                  {activeCustomer ? `${activeCustomer.tier} Member` : "LEES Guest"}
                 </p>
               </div>
               <div className="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-700 font-black text-xs shadow-inner">
@@ -690,7 +690,17 @@ export default function App() {
             </div>
             <div className="mt-8 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-slate-400">
               <p>&copy; 2026 LEES CHEMICALS. All rights reserved.</p>
-              <p>AuraMart Loyalty Ledger Suite</p>
+              <p>
+                Created by{" "}
+                <a
+                  href="https://happyhunterdigital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-slate-500 hover:text-slate-800 transition underline decoration-dotted"
+                >
+                  happyhunterdigital.com
+                </a>
+              </p>
             </div>
           </footer>
 
@@ -1133,7 +1143,7 @@ export default function App() {
 
       {/* Subtle bottom footprint */}
       <div className="absolute bottom-4 left-6 hidden md:block text-[9px] text-slate-400 font-mono tracking-wider font-semibold pointer-events-none">
-        AuraMart System Ledger
+        LEES CHEMICALS System Ledger
       </div>
 
       {/* MOBILE BOTTOM NAVIGATION TAB BAR */}

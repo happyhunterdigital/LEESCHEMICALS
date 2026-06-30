@@ -388,6 +388,14 @@ export default function CompanyHome({ onNavigateToStore, onAddToCartByProduct }:
           {/* Tier 1: Standard Bundle */}
           <div className="bg-white rounded-3xl border-2 border-black p-6 flex flex-col justify-between text-left shadow-sm hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition">
             <div className="space-y-6">
+              <div className="w-full h-44 rounded-2xl overflow-hidden border-2 border-black bg-slate-100 shadow-sm relative">
+                <img
+                  src="https://res.cloudinary.com/dka0498ns/image/upload/v1782854274/Lees_Concentrated_Washing_Powder_Lees_Whitening_Laundry_Bleach_Degrease_Dishwashing_Liquid_espchl.jpg"
+                  alt="Standard Hygiene Pack"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
                 <span className="text-[9px] font-black uppercase tracking-widest text-[#C85A3F] font-mono">Starter Household</span>
                 <h3 className="text-lg font-black text-slate-950 mt-1 uppercase">Standard Hygiene Pack</h3>
@@ -436,11 +444,19 @@ export default function CompanyHome({ onNavigateToStore, onAddToCartByProduct }:
 
           {/* Tier 2: Premium (Most Popular - Styled Slightly Taller) */}
           <div className="bg-[#112F20] text-white rounded-3xl p-6 flex flex-col justify-between text-left shadow-xl border-4 border-black relative lg:-translate-y-2 lg:scale-[1.03] shadow-[#112F20]/10">
-            <div className="absolute top-4 right-4 bg-[#FFFDE8] text-slate-950 text-[8px] font-black px-2.5 py-1 rounded border border-black uppercase tracking-widest font-mono">
+            <div className="absolute top-4 right-4 bg-[#FFFDE8] text-slate-950 text-[8px] font-black px-2.5 py-1 rounded border border-black uppercase tracking-widest font-mono z-10">
               Most Popular
             </div>
 
             <div className="space-y-6">
+              <div className="w-full h-44 rounded-2xl overflow-hidden border-2 border-black bg-slate-900 shadow-sm relative">
+                <img
+                  src="https://res.cloudinary.com/dka0498ns/image/upload/v1782854274/Lees_Concentrated_Washing_Powder_Whitening_Laundry_Bleach__All-Purpose_Green_Cleaner_Ultra-Degreaser_Dishwashing_Liquid_Multi-Surface_Cleaning_Cream_zrvrww.jpg"
+                  alt="Premium Hygiene Set"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
                 <span className="text-[9px] font-black uppercase tracking-widest text-[#D68C7E] font-mono">Complete Home Guard</span>
                 <h3 className="text-lg font-black text-slate-100 mt-1 uppercase">Premium Hygiene Set</h3>
@@ -494,6 +510,14 @@ export default function CompanyHome({ onNavigateToStore, onAddToCartByProduct }:
           {/* Tier 3: Elite Care */}
           <div className="bg-[#FFFDE8] rounded-3xl border-2 border-black p-6 flex flex-col justify-between text-left shadow-sm hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition">
             <div className="space-y-6">
+              <div className="w-full h-44 rounded-2xl overflow-hidden border-2 border-black bg-slate-100 shadow-sm relative">
+                <img
+                  src="https://res.cloudinary.com/dka0498ns/image/upload/v1782854274/Lees_Chemicals_tyre-dash-official_Leather_Cleaner_ergbfd.jpg"
+                  alt="Elite Automotive Pack"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
                 <span className="text-[9px] font-black uppercase tracking-widest text-[#C85A3F] font-mono">Workshop & Detailing</span>
                 <h3 className="text-lg font-black text-slate-950 mt-1 uppercase">Elite Automotive Pack</h3>
