@@ -443,18 +443,6 @@ export default function App() {
         </div>
         
         <div className="flex items-center gap-2">
-          <select
-            value={activeTab}
-            onChange={(e) => setActiveTab(e.target.value as any)}
-            className="bg-slate-50 border-2 border-black rounded-lg px-2 py-1.5 text-[11px] sm:text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-[#112F20]"
-          >
-            <option value="home">Home</option>
-            <option value="store">Shop</option>
-            <option value="loyalty">Rewards</option>
-            <option value="inventory">Inventory</option>
-            <option value="analytics">Analytics</option>
-          </select>
-          
           <button
             onClick={() => setCartOpen(true)}
             className="relative p-2 bg-slate-50 border-2 border-black rounded-lg shadow-[2px_2px_0px_rgba(0,0,0,1)] active:translate-y-px active:shadow-none"
@@ -561,7 +549,7 @@ export default function App() {
         </header>
 
         {/* SUB CONTAINER (Scrollable Active Content Stage) */}
-        <div className="flex-1 p-4 md:p-8 space-y-6 overflow-y-auto bg-slate-50">
+        <div className="flex-1 p-4 md:p-8 pb-24 md:pb-8 space-y-6 overflow-y-auto bg-slate-50">
           
           {/* Quick Metrics Header Grid (Visual Stats Cards matching theme) - Reserved for admin dashboard tabs only */}
           {(activeTab === "analytics" || activeTab === "inventory") && (
@@ -1147,6 +1135,55 @@ export default function App() {
       <div className="absolute bottom-4 left-6 hidden md:block text-[9px] text-slate-400 font-mono tracking-wider font-semibold pointer-events-none">
         AuraMart System Ledger
       </div>
+
+      {/* MOBILE BOTTOM NAVIGATION TAB BAR */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200/80 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] px-2 py-2 flex justify-around items-center z-40">
+        <button
+          onClick={() => setActiveTab("home")}
+          className={`flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            activeTab === "home" ? "text-[#112F20] font-black scale-105" : "text-slate-500 hover:text-slate-900"
+          }`}
+        >
+          <Home className={`w-5 h-5 ${activeTab === "home" ? "stroke-[2.5px] text-[#112F20]" : "stroke-[1.8px] text-slate-500"}`} />
+          <span className="text-[10px] tracking-tight font-sans uppercase font-bold">Home</span>
+        </button>
+        <button
+          onClick={() => setActiveTab("store")}
+          className={`flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            activeTab === "store" ? "text-[#112F20] font-black scale-105" : "text-slate-500 hover:text-slate-900"
+          }`}
+        >
+          <ShoppingCart className={`w-5 h-5 ${activeTab === "store" ? "stroke-[2.5px] text-[#112F20]" : "stroke-[1.8px] text-slate-500"}`} />
+          <span className="text-[10px] tracking-tight font-sans uppercase font-bold">Shop</span>
+        </button>
+        <button
+          onClick={() => setActiveTab("loyalty")}
+          className={`flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            activeTab === "loyalty" ? "text-[#112F20] font-black scale-105" : "text-slate-500 hover:text-slate-900"
+          }`}
+        >
+          <Award className={`w-5 h-5 ${activeTab === "loyalty" ? "stroke-[2.5px] text-[#112F20]" : "stroke-[1.8px] text-slate-500"}`} />
+          <span className="text-[10px] tracking-tight font-sans uppercase font-bold">Rewards</span>
+        </button>
+        <button
+          onClick={() => setActiveTab("inventory")}
+          className={`flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            activeTab === "inventory" ? "text-[#112F20] font-black scale-105" : "text-slate-500 hover:text-slate-900"
+          }`}
+        >
+          <Layers className={`w-5 h-5 ${activeTab === "inventory" ? "stroke-[2.5px] text-[#112F20]" : "stroke-[1.8px] text-slate-500"}`} />
+          <span className="text-[10px] tracking-tight font-sans uppercase font-bold">Inventory</span>
+        </button>
+        <button
+          onClick={() => setActiveTab("analytics")}
+          className={`flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            activeTab === "analytics" ? "text-[#112F20] font-black scale-105" : "text-slate-500 hover:text-slate-900"
+          }`}
+        >
+          <LayoutDashboard className={`w-5 h-5 ${activeTab === "analytics" ? "stroke-[2.5px] text-[#112F20]" : "stroke-[1.8px] text-slate-500"}`} />
+          <span className="text-[10px] tracking-tight font-sans uppercase font-bold">Analytics</span>
+        </button>
+      </nav>
 
     </div>
   );
