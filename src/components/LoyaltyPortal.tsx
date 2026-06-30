@@ -86,6 +86,7 @@ export default function LoyaltyPortal({
     100,
     Math.round((activeCustomer.lifetimePoints / limits.targetPoints) * 100)
   );
+  const pointsNeeded = Math.max(0, limits.targetPoints - activeCustomer.lifetimePoints);
 
   const getTierBadgeStyles = (tier: string) => {
     switch (tier) {
@@ -198,17 +199,31 @@ export default function LoyaltyPortal({
                 <p className="text-xs text-purple-700">You are earning 2.0x loyalty points and getting a flat 15% discount on all store items.</p>
               </div>
             ) : (
-              <div className="space-y-2">
-                <div className="h-3.5 w-full bg-slate-100 rounded-full overflow-hidden shadow-inner border border-slate-200">
-                  <div
-                    className="h-full bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-full transition-all duration-500"
-                    style={{ width: `${nextTierProgress}%` }}
-                  />
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <div className="h-3.5 w-full bg-slate-100 rounded-full overflow-hidden shadow-inner border border-slate-200">
+                    <div
+                      className="h-full bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-full transition-all duration-500"
+                      style={{ width: `${nextTierProgress}%` }}
+                    />
+                  </div>
+                  <div className="flex items-center justify-between text-[11px] text-slate-400 font-semibold">
+                    <span>Current: {activeCustomer.tier}</span>
+                    <span className="text-indigo-600 font-bold">Progress to {limits.next}: {nextTierProgress}%</span>
+                    <span>Target: {limits.targetPoints.toLocaleString()} LP</span>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between text-[11px] text-slate-400 font-semibold">
-                  <span>Current: {activeCustomer.tier}</span>
-                  <span className="text-indigo-600 font-bold">Progress to {limits.next}: {nextTierProgress}%</span>
-                  <span>Target: {limits.targetPoints.toLocaleString()} LP</span>
+
+                <div className="bg-amber-50/60 border border-amber-200/80 rounded-xl p-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-fade-in">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
+                    <p className="text-xs text-slate-700 font-medium text-left">
+                      You need <span className="font-black text-[#112F20]">{pointsNeeded.toLocaleString()} more LP</span> to unlock the <span className="font-extrabold text-indigo-700">{limits.next}</span> Tier benefits!
+                    </p>
+                  </div>
+                  <span className="text-[10px] bg-amber-100 text-amber-800 font-black px-2.5 py-1 rounded-full uppercase tracking-wider shrink-0">
+                    -{pointsNeeded.toLocaleString()} LP Left
+                  </span>
                 </div>
               </div>
             )}
