@@ -689,7 +689,16 @@ export default function App() {
               </div>
             </div>
             <div className="mt-8 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-slate-400">
-              <p>&copy; 2026 LEES CHEMICALS. All rights reserved.</p>
+              <p className="flex items-center gap-3">
+                &copy; 2026 LEES CHEMICALS. All rights reserved.
+                <button
+                  type="button"
+                  onClick={() => document.dispatchEvent(new Event('hh:open-consent'))}
+                  className="underline decoration-dotted hover:text-slate-800 transition"
+                >
+                  Cookie settings
+                </button>
+              </p>
               <p>
                 Created by{" "}
                 <a
